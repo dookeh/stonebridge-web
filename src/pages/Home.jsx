@@ -9,9 +9,7 @@ const Home = () => {
 
       {/* HERO SECTION */}
       <header className="relative h-screen flex items-center justify-center overflow-hidden border-b-4 border-sb-gold/20">
-        <div className="absolute inset-0 z-0 opacity-20 flex items-center justify-center">
-          <img src="/logo.png" alt="" className="w-full h-full object-contain scale-110 grayscale" />
-        </div>
+
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-sb-dark/40 via-transparent to-sb-dark" />
 
         <div className="relative z-20 text-center px-4 max-w-5xl">
@@ -24,7 +22,7 @@ const Home = () => {
           <div className="flex items-center justify-center gap-6 mb-10">
             <div className="h-[1px] w-16 bg-sb-gold/40" />
             <p className="font-ui text-xs md:text-sm font-bold tracking-ultra-widest text-sb-gold uppercase">
-              UK Based // Faction Centric
+              UK Themed // Faction Centric
             </p>
             <div className="h-[1px] w-16 bg-sb-gold/40" />
           </div>
@@ -70,7 +68,7 @@ const Home = () => {
              <ObjectiveCard 
                title="Public Order" 
                status="Contained" 
-               desc="The SMC Metropolitan Constabulary maintains a 'Zero Tolerance' mandate to protect the city's regeneration investments."
+               desc="The Stonebridge Metropolitan Constabulary (SMC) maintains a 'Zero Tolerance' mandate to protect the city's regeneration investments."
              />
           </div>
         </div>
@@ -106,7 +104,7 @@ const Home = () => {
       <footer className="py-20 text-center opacity-50">
         <img src="/logo.png" className="h-10 mx-auto mb-6 grayscale" alt="" />
         <p className="font-ui text-[10px] tracking-ultra-widest uppercase text-sb-gold">
-          SMC Metropolitan Constabulary // Secure Terminal Alpha-01
+          Stonebridge RP - Copyright 2026
         </p>
       </footer>
     </div>
