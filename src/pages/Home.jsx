@@ -10,7 +10,7 @@ const Home = () => {
       {/* HERO SECTION */}
       <header className="relative h-screen flex items-center justify-center overflow-hidden border-b-4 border-sb-gold/20">
         <div className="absolute inset-0 z-0 opacity-20 flex items-center justify-center">
-          <img src="/logo.png" alt="" className="w-full h-full object-contain scale-110 grayscale" />
+          <img src="/logo2.png" alt="" className="w-full h-full object-contain scale-110 grayscale" />
         </div>
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-sb-dark/40 via-transparent to-sb-dark" />
 
