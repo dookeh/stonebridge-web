@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-sb-dark text-zinc-100 antialiased;
+    /* This adds a very subtle scanline/grain effect common in game menus */
+    background-image: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), 
+                      linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.02));
+    background-size: 100% 2px, 3px 100%;
+  }
+
+  /* Custom "Steelbourne" Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-sb-dark;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-sb-gold hover:bg-sb-orange transition-colors;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .btn-industrial {
+    @apply font-header uppercase italic transition-all active:translate-y-1 shadow-lg;
+  }
+}
