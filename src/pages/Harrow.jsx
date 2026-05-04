@@ -47,10 +47,10 @@ const Harrow = () => {
             <div className="p-8 bg-zinc-900/40 border border-[#a37e2c]/20">
               <h3 className="font-header text-white uppercase mb-6 border-b border-white/5 pb-4 tracking-tighter">Intelligence Brief</h3>
               <div className="space-y-4">
-                <StatRow label="Visual Identity" value="Lion & Crossed Pistols" />
+                <StatRow label="Visual Identity" value="Lions & Old Money" />
                 <StatRow label="Primary Asset" value="Crystal Blue" />
                 <StatRow label="Operations" value="Financial Crimes" />
-                <StatRow label="Territory" value="Mansion District / North" />
+                <StatRow label="Territory" value="Mansion District / Northwest City" />
               </div>
             </div>
             
