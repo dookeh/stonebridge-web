@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cpu, Terminal, Laptop, ChevronLeft, Activity } from 'lucide-react';
+import { Terminal, Laptop, ChevronLeft, Activity } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
