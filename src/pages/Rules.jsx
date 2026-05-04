@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldAlert, Scale, Users, Zap, ChevronRight, Lock, FileSearch, AlertCircle } from 'lucide-react';
+import { ShieldAlert, Scale, Zap, ChevronRight, FileSearch, AlertCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 

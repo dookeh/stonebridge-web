@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, HardHat, Cpu, Train, AlertTriangle, ChevronRight } from 'lucide-react';
+import { Train } from 'lucide-react';
 import Navbar from '../components/Navbar';
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
           <div className="flex items-center justify-center gap-6 mb-10">
             <div className="h-[1px] w-16 bg-sb-gold/40" />
             <p className="font-ui text-xs md:text-sm font-bold tracking-ultra-widest text-sb-gold uppercase">
-              UK Based // Faction Centric // 
+              UK Based // Faction Centric
             </p>
             <div className="h-[1px] w-16 bg-sb-gold/40" />
           </div>
