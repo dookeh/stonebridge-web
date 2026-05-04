@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, History, Target, Users, Zap, Shield } from 'lucide-react';
+import { History, Target, Zap, Shield, AlertTriangle } from 'lucide-react';
 import Navbar from '../components/Navbar';
 
 const Lore = () => {
