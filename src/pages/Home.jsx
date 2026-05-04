@@ -9,11 +9,13 @@ const Home = () => {
 
       {/* HERO SECTION */}
       <header className="relative h-screen flex items-center justify-center overflow-hidden border-b-4 border-sb-gold/20">
-
+        <div className="absolute inset-0 z-0 opacity-20 flex items-center justify-center">
+          <img src="/logo.png" alt="" className="w-full h-full object-contain scale-110 grayscale" />
+        </div>
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-sb-dark/40 via-transparent to-sb-dark" />
 
         <div className="relative z-20 text-center px-4 max-w-5xl">
-          <img src="/logo.png" alt="SMC" className="w-56 mx-auto mb-8 drop-shadow-gold-glow" />
+          {/*<img src="/logo.png" alt="SMC" className="w-56 mx-auto mb-8 drop-shadow-gold-glow" />*/}
           
           <h1 className="font-header text-[55px] md:text-[110px] leading-[0.9] uppercase tracking-tight text-white mb-4">
             STONE<span className="text-sb-orange drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">BRIDGE</span>
