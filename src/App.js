@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Rules from './pages/Rules';
 import Lore from './pages/Lore';
 import Harrow from './pages/Harrow'; 
+import Dockside from './pages/Dockside';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -25,6 +26,7 @@ function App() {
 
         {/* Individual Faction Dossiers */}
         <Route path="/factions/harrow" element={<Harrow />} />
+        <Route path="/factions/dockside" element={<Dockside />} />
         
         {/* 
           As you create Dockside.jsx and CircuitRunners.jsx, 
