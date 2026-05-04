@@ -1,5 +1,5 @@
 import React from 'react';
-import { Anchor, Package, Users, ChevronLeft, ShieldAlert } from 'lucide-react';
+import { Anchor, Users, ChevronLeft, ShieldAlert } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
