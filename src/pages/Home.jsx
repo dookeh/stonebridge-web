@@ -1,6 +1,7 @@
 import React from 'react';
-import { Train } from 'lucide-react';
+import { Train, ChevronRight } from 'lucide-react'; // Added ChevronRight here
 import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -15,8 +16,6 @@ const Home = () => {
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-sb-dark/40 via-transparent to-sb-dark" />
 
         <div className="relative z-20 text-center px-4 max-w-5xl">
-          {/*<img src="/logo.png" alt="SMC" className="w-56 mx-auto mb-8 drop-shadow-gold-glow" />*/}
-          
           <h1 className="font-header text-[55px] md:text-[110px] leading-[0.9] uppercase tracking-tight text-white mb-4">
             STONE<span className="text-sb-orange drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">BRIDGE</span>
           </h1>
@@ -35,7 +34,7 @@ const Home = () => {
         </div>
       </header>
 
-      {/* LORE SECTION: "THE REGENERATION MANDATE" */}
+      {/* LORE SECTION */}
       <section id="lore" className="py-32 px-6 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-20 items-start">
           <div className="space-y-10">
@@ -76,7 +75,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* FACTIONS SECTION */}
+      {/* FACTIONS SECTION - Matching your screenshot */}
       <section id="factions" className="py-32 bg-sb-orange text-black relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <h2 className="font-header text-center text-6xl md:text-8xl uppercase mb-20 tracking-tighter italic drop-shadow-sm">
@@ -87,16 +86,19 @@ const Home = () => {
             <FactionItem 
               name="Harrow Syndicate" 
               role="Old Money // Influence"
+              slug="harrow"
               desc="Generational wealth meets ruthless corporate influence. The architects behind the glass walls." 
             />
             <FactionItem 
               name="Dockside Order" 
               role="The Roots // Smuggling"
+              slug="dockside"
               desc="Deeply rooted in the city's industrial past. Loyalty is the only currency that matters in the Docks." 
             />
             <FactionItem 
               name="Circuit Runners" 
               role="New Money // Cybercrime"
+              slug="circuit-runners"
               desc="Digital ghosts living in the cracks of the city's tech hub. If it's connected, they own it." 
             />
           </div>
@@ -123,12 +125,22 @@ const ObjectiveCard = ({ title, status, desc }) => (
   </div>
 );
 
-const FactionItem = ({ name, role, desc }) => (
-  <div className="border-t-4 border-black pt-8">
-    <h4 className="font-header text-3xl uppercase italic mb-1">{name}</h4>
-    <p className="font-ui text-[10px] font-black uppercase tracking-widest mb-4 opacity-70">{role}</p>
-    <p className="font-medium text-sm leading-relaxed text-black/80">{desc}</p>
-  </div>
+const FactionItem = ({ name, role, desc, slug }) => (
+  <Link to={`/factions/${slug}`} className="block border-t-4 border-black pt-8 group hover:bg-black/5 transition-all">
+    <h4 className="font-header text-3xl uppercase italic mb-1 group-hover:text-white transition-colors">
+      {name}
+    </h4>
+    <p className="font-ui text-[10px] font-black uppercase tracking-widest mb-4 opacity-70 group-hover:opacity-100 transition-opacity">
+      {role}
+    </p>
+    <p className="font-medium text-sm leading-relaxed text-black/80 group-hover:text-black">
+      {desc}
+    </p>
+    <div className="mt-4 flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-x-[-10px] group-hover:translate-x-0">
+      <span>View Intelligence File</span>
+      <ChevronRight size={12} />
+    </div>
+  </Link>
 );
 
 export default Home;

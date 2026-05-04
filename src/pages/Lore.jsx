@@ -115,7 +115,7 @@ const Lore = () => {
       </main>
 
       <footer className="py-20 text-center opacity-30">
-        <p className="font-ui text-[10px] tracking-widest uppercase">Archive Concluded // SMC-SECURE</p>
+        <p className="font-ui text-[10px] tracking-widest uppercase">Stonebridge RP - Copyright 2026</p>
       </footer>
     </div>
   );
