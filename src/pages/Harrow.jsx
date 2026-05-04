@@ -105,9 +105,13 @@ const Harrow = () => {
 
 /* Helper Components to keep the main code clean */
 const StatRow = ({ label, value }) => (
-  <div className="flex justify-between items-center text-[10px] uppercase tracking-widest border-b border-white/5 pb-2">
-    <span className="text-zinc-500">{label}</span>
-    <span className="text-[#a37e2c] font-black">{value}</span>
+  <div className="flex justify-between items-center py-3 border-b border-white/5 group/row">
+    <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-500 group-hover/row:text-zinc-300 transition-colors">
+      {label}
+    </span>
+    <span className="text-[11px] uppercase tracking-widest text-[#a37e2c] font-black text-right ml-4">
+      {value}
+    </span>
   </div>
 );
 

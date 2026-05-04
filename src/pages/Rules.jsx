@@ -30,7 +30,7 @@ const Rules = () => {
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-red-600 rounded-full animate-pulse"></span>
                 <p className="text-zinc-500 text-[9px] font-bold uppercase tracking-[0.2em]">
-                  Steelbourne Metropolitan Constabulary // Secure Terminal
+                  Stonebridge Metropolitan Constabulary // Secure Terminal
                 </p>
               </div>
             </div>
@@ -47,7 +47,7 @@ const Rules = () => {
         <div className="mb-12 border-l-4 border-[#a37e2c] pl-6 py-2">
           <h2 className="text-4xl font-black uppercase italic mb-2 tracking-tighter">Penal Code & Conduct</h2>
           <p className="text-zinc-500 max-w-2xl text-sm leading-relaxed">
-            Steelbourne thrives on solid roleplay. By entering the Special Economic Regeneration Zone, 
+            Stonebridge thrives on solid roleplay. By entering the Special Economic Regeneration Zone, 
             you agree to the following statutes. Failure to comply will result in citizenship revocation.
           </p>
         </div>
@@ -80,7 +80,7 @@ const Rules = () => {
                 <span className="text-[10px] font-bold uppercase tracking-widest">Legal Notice</span>
               </div>
               <p className="text-[10px] text-zinc-600 leading-tight italic">
-                Steelbourne RP is a free service. We reserve the right to ban any individual not helping the community move forward.
+                Stonebridge RP is a free service. We reserve the right to ban any individual not helping the community move forward.
               </p>
             </div>
           </div>
@@ -160,7 +160,7 @@ const Rules = () => {
 
       <footer className="py-12 border-t border-white/5 text-center px-6">
         <p className="text-zinc-600 text-[9px] uppercase tracking-[0.5em]">
-          Steelbourne Metropolitan Constabulary // Code of Conduct Revision 2026.04
+          Stonebridge Metropolitan Constabulary // Code of Conduct Revision 2026.04
         </p>
       </footer>
     </div>
