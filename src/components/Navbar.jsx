@@ -20,9 +20,15 @@ const Navbar = () => {
       </div>
 
       <div className="flex gap-4">
-        <button className="bg-[#d97706] hover:bg-[#b45309] text-white px-6 py-2 text-xs font-black uppercase transition-all shadow-[0_0_15px_rgba(217,119,6,0.3)]">
-          Join Now
-        </button>
+        <a
+          href="https://discord.gg/7gbxxMEBnF"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-[#d97706] hover:bg-[#b45309] text-white px-6 py-2 text-xs font-black uppercase transition-all shadow-[0_0_15px_rgba(217,119,6,0.3)]">
+            Join Discord
+          </button>
+        </a>
       </div>
     </nav>
   );
