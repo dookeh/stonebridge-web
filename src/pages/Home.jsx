@@ -27,10 +27,13 @@ const Home = () => {
             </p>
             <div className="h-[1px] w-16 bg-sb-gold/40" />
           </div>
-
-          <button className="group relative font-header bg-gradient-to-b from-sb-orange to-sb-orange-dark text-white px-12 py-5 text-2xl uppercase italic transition-all hover:brightness-110 border-b-4 border-black/40 active:border-0 active:translate-y-1 shadow-glow">
-             <span className="relative z-10">Initialize Session</span>
-          </button>
+          <div>
+            <a href="https://cfx.re/join/klmqg6" target="_blank" rel="noopener noreferrer">
+              <button className="group relative font-header bg-gradient-to-b from-sb-orange to-sb-orange-dark text-white px-12 py-5 text-2xl uppercase italic transition-all hover:brightness-110 border-b-4 border-black/40 active:border-0 active:translate-y-1 shadow-glow">
+                <span className="relative z-10">Initialize Session</span>
+              </button>
+            </a>
+            </div>
         </div>
       </header>
 
